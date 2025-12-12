@@ -33,9 +33,4 @@ public class HistoryController {
         return ResponseEntity.ok(workoutLogService.getUserHistory(userId));
     }
 
-    @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteLog(@PathVariable UUID id) {
-        workoutLogService.deleteLog(id);
-        return ResponseEntity.noContent().build();
-    }
 }
