@@ -75,7 +75,7 @@ java -jar target/fitness-history-service-0.0.1-SNAPSHOT.jar
 
 The service typically receives data from the main application via REST:
 
-**`POST /api/history/record`**
+**`POST /api/history`**
 
 ```json
 {
